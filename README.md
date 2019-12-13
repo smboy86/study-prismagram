@@ -2,9 +2,29 @@
 
 노마드코더 동영상강의 따라잡기
 
-#설치 라이브러리
+# 프리즈마 설치
 
-1.  graphql-yoga ::
+1. 설치
+
+- npm install -g prisma
+
+2. 프리즈마그램 서비스 가입
+
+- https://app.prisma.io/
+- new Serive 생성
+
+3. 프리스마그램 로그인
+
+- prisma login -k eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjazQ0OG5mbjhudzRhMDg2MWtieWRhd3RsIiwiaWF0IjoxNTc2MjQ2ODEzLCJleHAiOjE1Nzg4Mzg4MTN9.LysvGcD7zF
+  \_tRaxNzS1OmbQSgiLDuVUghnBxqhW1iQw
+
+4. 프리즈마 서버 생성
+
+- prisma init
+
+# 설치 라이브러리
+
+1.  graphql-yoga ::  
     yarn add graphql-yoga
 
 2.  nodemon ::  
