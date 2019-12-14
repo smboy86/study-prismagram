@@ -1,0 +1,53 @@
+# 그래프큐엘 실행 문장들
+
+## 19.12.14
+
+#0. 조회
+{
+  users {
+    id
+    username
+    email
+    firstName
+    lastName
+    bio
+    following {
+      id
+    }
+    followers {
+      id
+    }
+  }
+}
+
+# 1. crateUser
+mutation {
+  createUser(data: { username: "testUser1", email: "test1@naver.com" }) {
+    id
+  }
+}
+
+# 2. 심플 업데이트 User
+mutation {
+  updateUser(
+    data: { firstName: "fnUpdate", lastName: "lnUpdate" }
+    where: { id: "ck45djs45n5mf0b093sx4b660" }
+  ) {
+    id
+  }
+}
+
+# 3) 업데이트 팔로윙 & 팔로워
+mutation {
+  updateUser(
+    data: { following: { connect: { id: "ck44bhyeflqet0b09p220ecbs" } } }
+    where: { id: "ck45djs45n5mf0b093sx4b660" }
+  ) {
+    username
+    firstName
+    lastName
+    following {
+      id
+    }
+  }
+}
