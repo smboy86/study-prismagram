@@ -22,6 +22,12 @@
 
 - prisma init
 
+5. 프리즈마 서버(?) 실행
+
+- yarn dev :: nodemon --exec babel-node src/server.js
+
+- yarn add prisma-client-lib :: 프리즈마 관련 라이브러리 설치
+
 # 설치 라이브러리
 
 1.  graphql-yoga ::  

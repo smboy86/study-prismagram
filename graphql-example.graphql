@@ -51,3 +51,16 @@ mutation {
     }
   }
 }
+
+# createAccount
+
+mutation {
+  createAccount(
+    username: "testUser"
+    email: "test@nawesr.com"
+    firstName: "ttt"
+    lastName: "ser"
+  ) {
+    id
+  }
+}
