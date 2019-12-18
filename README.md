@@ -53,3 +53,11 @@
 
 8.  ddd  
     yarn add graphql-tools merge-graphql-schemas
+
+# node 로 메일 보내기
+
+yarn add nodemailer :: https://nodemailer.com/about/
+
+https://sendgrid.com/
+
+yarn add nodemailer-sendgrid-transport
